@@ -1,4 +1,4 @@
-update=2017/06/20 1:22:27
+update=2017/06/21 2:19:17
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../../kicad-library/library;../../my_kicad-library
@@ -125,3 +123,5 @@ LibName93=Xicor
 LibName94=zetex
 LibName95=Zilog
 LibName96=D:/Yuki/my_kicad-library/mylib
+[general]
+version=1
