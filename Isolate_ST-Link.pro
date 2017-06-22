@@ -1,4 +1,4 @@
-update=2017/06/21 2:19:17
+update=2017年06月22日木曜日 11:37:45
 version=1
 last_client=kicad
 [pcbnew]
@@ -122,6 +122,6 @@ LibName92=Worldsemi
 LibName93=Xicor
 LibName94=zetex
 LibName95=Zilog
-LibName96=D:/Yuki/my_kicad-library/mylib
+LibName96=mylib
 [general]
 version=1
