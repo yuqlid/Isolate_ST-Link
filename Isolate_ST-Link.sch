@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Isolate_ST-Link-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -323,8 +324,6 @@ F 3 "" H 8350 3500 50  0001 C CNN
 	1    8350 3500
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7950 3300 8500 3300
 $Comp
 L R R9
 U 1 1 5948D599
@@ -785,7 +784,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 3650 2900 3650
 $Comp
-L APE8865NR-33-HF-3 U3
+L APE8865NR-33-HF-3-RESCUE-Isolate_ST-Link U3
 U 1 1 594BC3C2
 P 7200 2300
 F 0 "U3" H 6900 2550 50  0000 C CNN
@@ -1324,4 +1323,19 @@ Wire Wire Line
 Wire Wire Line
 	1150 3850 1150 4050
 Connection ~ 1150 4050
+$Comp
+L R R?
+U 1 1 59CA9CFA
+P 8300 3300
+F 0 "R?" V 8380 3300 50  0000 C CNN
+F 1 "22" V 8300 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8230 3300 50  0001 C CNN
+F 3 "" H 8300 3300 50  0001 C CNN
+	1    8300 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 3300 8500 3300
+Wire Wire Line
+	8150 3300 7950 3300
 $EndSCHEMATC
