@@ -284,7 +284,7 @@ F 3 "" H 1500 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 2300 1500 2300
+	1500 2300 2050 2300
 Wire Wire Line
 	1500 2250 1500 2350
 Connection ~ 1500 2300
@@ -514,8 +514,6 @@ Text HLabel 9150 5100 2    60   Input ~ 0
 USB_DM
 Text HLabel 9150 5200 2    60   Input ~ 0
 USB_DP
-NoConn ~ 9150 5300
-NoConn ~ 9150 5400
 Text HLabel 9150 5500 2    60   Input ~ 0
 USB_RENUMn
 Wire Wire Line
@@ -589,4 +587,15 @@ $EndComp
 Wire Wire Line
 	2500 4350 2500 4300
 Connection ~ 2500 4300
+Text GLabel 9750 5300 2    60   Input ~ 0
+SYS_JTMS
+Text GLabel 9750 5400 2    60   Input ~ 0
+SYS_JTCK
+Wire Wire Line
+	9750 5300 9150 5300
+Wire Wire Line
+	9150 5400 9750 5400
+Text GLabel 2050 2300 2    60   Input ~ 0
+SYS_NRST
+Connection ~ 1900 2300
 $EndSCHEMATC
