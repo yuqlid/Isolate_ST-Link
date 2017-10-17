@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Isolate_ST-Link-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -95,7 +94,6 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
-LIBS:mylib
 LIBS:Isolate_ST-Link-cache
 EELAYER 25 0
 EELAYER END
