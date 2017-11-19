@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Isolate_ST-Link-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -94,6 +95,7 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
+LIBS:mylib
 LIBS:Isolate_ST-Link-cache
 EELAYER 25 0
 EELAYER END
@@ -477,26 +479,26 @@ Wire Wire Line
 $Comp
 L C C11
 U 1 1 5948271C
-P 10100 4800
-F 0 "C11" H 10125 4900 50  0000 L CNN
-F 1 "20p" H 10125 4700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 10138 4650 50  0001 C CNN
-F 3 "" H 10100 4800 50  0001 C CNN
-	1    10100 4800
-	0    -1   -1   0   
+P 10000 5000
+F 0 "C11" H 10025 5100 50  0000 L CNN
+F 1 "20p" H 10025 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10038 4850 50  0001 C CNN
+F 3 "" H 10000 5000 50  0001 C CNN
+	1    10000 5000
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 4800 9950 4800
+	9900 4800 10000 4800
 $Comp
 L GND #PWR053
 U 1 1 594827DF
-P 10250 4800
-F 0 "#PWR053" H 10250 4550 50  0001 C CNN
-F 1 "GND" H 10250 4650 50  0000 C CNN
-F 2 "" H 10250 4800 50  0001 C CNN
-F 3 "" H 10250 4800 50  0001 C CNN
-	1    10250 4800
-	0    -1   -1   0   
+P 10000 5200
+F 0 "#PWR053" H 10000 4950 50  0001 C CNN
+F 1 "GND" H 10000 5050 50  0000 C CNN
+F 2 "" H 10000 5200 50  0001 C CNN
+F 3 "" H 10000 5200 50  0001 C CNN
+	1    10000 5200
+	1    0    0    -1  
 $EndComp
 Text HLabel 9150 4900 2    60   Output ~ 0
 LED_STLINK
@@ -585,15 +587,19 @@ $EndComp
 Wire Wire Line
 	2500 4350 2500 4300
 Connection ~ 2500 4300
-Text GLabel 9750 5300 2    60   Input ~ 0
+Text GLabel 9150 5300 2    60   Input ~ 0
 SYS_JTMS
-Text GLabel 9750 5400 2    60   Input ~ 0
+Text GLabel 9150 5400 2    60   Input ~ 0
 SYS_JTCK
 Wire Wire Line
-	9750 5300 9150 5300
+	9150 5300 9150 5300
 Wire Wire Line
-	9150 5400 9750 5400
+	9150 5400 9150 5400
 Text GLabel 2050 2300 2    60   Input ~ 0
 SYS_NRST
 Connection ~ 1900 2300
+Wire Wire Line
+	10000 4800 10000 4850
+Wire Wire Line
+	10000 5200 10000 5150
 $EndSCHEMATC
