@@ -1,4 +1,4 @@
-update=2017/10/26 13:45:28
+update=2018/06/08 15:55:33
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,11 +23,9 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
-LibDir=../../kicad-library/library;../../my_kicad-library
+LibDir=../../kicad-library/library;../../my_kicad-library;C:/Users/kusakabe/Downloads/1、JY模块PCBLib-20171120T033329Z-001/1縲゛Y讓｡蝮猶CBLib
 [eeschema/libraries]
 LibName1=Isolate_ST-Link-rescue
 LibName2=power
@@ -126,3 +124,7 @@ LibName94=Xicor
 LibName95=zetex
 LibName96=Zilog
 LibName97=mylib
+LibName98=C:/Users/kusakabe/Downloads/1、JY模块PCBLib-20171120T033329Z-001/1縲゛Y讓｡蝮猶CBLib/JYModule
+LibName99=C:/Users/kusakabe/Downloads/1、JY模块PCBLib-20171120T033329Z-001/1縲゛Y讓｡蝮猶CBLib/JYModulePCB
+[general]
+version=1
