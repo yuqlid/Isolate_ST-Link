@@ -1,11 +1,46 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Isolate_ST-Link-rescue:APE8865NR-33-HF-3-RESCUE-Isolate_ST-Link
+# Connector_Generic_Conn_02x05_Odd_Even
 #
-DEF Isolate_ST-Link-rescue:APE8865NR-33-HF-3-RESCUE-Isolate_ST-Link U 0 40 Y Y 1 F N
+DEF Connector_Generic_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+F0 "J" 50 300 50 H V C CNN
+F1 "Connector_Generic_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 250 150 -250 1 1 10 f
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_10 10 300 -200 150 L 50 50 1 1 P
+X Pin_2 2 300 200 150 L 50 50 1 1 P
+X Pin_3 3 -200 100 150 R 50 50 1 1 P
+X Pin_4 4 300 100 150 L 50 50 1 1 P
+X Pin_5 5 -200 0 150 R 50 50 1 1 P
+X Pin_6 6 300 0 150 L 50 50 1 1 P
+X Pin_7 7 -200 -100 150 R 50 50 1 1 P
+X Pin_8 8 300 -100 150 L 50 50 1 1 P
+X Pin_9 9 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Isolate_ST-Link-rescue_APE8865NR-33-HF-3-RESCUE-Isolate_ST-Link
+#
+DEF Isolate_ST-Link-rescue_APE8865NR-33-HF-3-RESCUE-Isolate_ST-Link U 0 40 Y Y 1 F N
 F0 "U" -300 250 50 H V C CNN
-F1 "Isolate_ST-Link-rescue:APE8865NR-33-HF-3-RESCUE-Isolate_ST-Link" 0 200 50 H V C CNN
+F1 "Isolate_ST-Link-rescue_APE8865NR-33-HF-3-RESCUE-Isolate_ST-Link" 0 200 50 H V C CNN
 F2 "TO_SOT_Packages_SMD:SOT-23" 0 100 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -19,11 +54,11 @@ X GND 3 0 -300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Isolate_ST-Link-rescue:BSS138
+# Isolate_ST-Link-rescue_BSS138
 #
-DEF Isolate_ST-Link-rescue:BSS138 Q 0 0 Y N 1 F N
+DEF Isolate_ST-Link-rescue_BSS138 Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "Isolate_ST-Link-rescue:BSS138" 200 0 50 H V L CNN
+F1 "Isolate_ST-Link-rescue_BSS138" 200 0 50 H V L CNN
 F2 "TO_SOT_Packages_SMD:SOT-23" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -53,11 +88,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Isolate_ST-Link-rescue:CONN_01X02
+# Isolate_ST-Link-rescue_CONN_01X02
 #
-DEF Isolate_ST-Link-rescue:CONN_01X02 J 0 40 Y N 1 F N
+DEF Isolate_ST-Link-rescue_CONN_01X02 J 0 40 Y N 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "Isolate_ST-Link-rescue:CONN_01X02" 100 0 50 V V C CNN
+F1 "Isolate_ST-Link-rescue_CONN_01X02" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -75,11 +110,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Isolate_ST-Link-rescue:CONN_01X04
+# Isolate_ST-Link-rescue_CONN_01X04
 #
-DEF Isolate_ST-Link-rescue:CONN_01X04 J 0 40 Y N 1 F N
+DEF Isolate_ST-Link-rescue_CONN_01X04 J 0 40 Y N 1 F N
 F0 "J" 0 250 50 H V C CNN
-F1 "Isolate_ST-Link-rescue:CONN_01X04" 100 0 50 V V C CNN
+F1 "Isolate_ST-Link-rescue_CONN_01X04" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -101,41 +136,11 @@ X P4 4 -200 -150 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Isolate_ST-Link-rescue:CONN_01X06
+# Isolate_ST-Link-rescue_GS2
 #
-DEF Isolate_ST-Link-rescue:CONN_01X06 J 0 40 Y N 1 F N
-F0 "J" 0 350 50 H V C CNN
-F1 "Isolate_ST-Link-rescue:CONN_01X06" 100 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Pin_Header_Straight_1X*
- Pin_Header_Angled_1X*
- Socket_Strip_Straight_1X*
- Socket_Strip_Angled_1X*
-$ENDFPLIST
-DRAW
-S -50 -245 10 -255 0 1 0 N
-S -50 -145 10 -155 0 1 0 N
-S -50 -45 10 -55 0 1 0 N
-S -50 55 10 45 0 1 0 N
-S -50 155 10 145 0 1 0 N
-S -50 255 10 245 0 1 0 N
-S -50 300 50 -300 0 1 0 N
-X P1 1 -200 250 150 R 50 50 1 1 P
-X P2 2 -200 150 150 R 50 50 1 1 P
-X P3 3 -200 50 150 R 50 50 1 1 P
-X P4 4 -200 -50 150 R 50 50 1 1 P
-X P5 5 -200 -150 150 R 50 50 1 1 P
-X P6 6 -200 -250 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Isolate_ST-Link-rescue:GS2
-#
-DEF Isolate_ST-Link-rescue:GS2 J 0 40 N N 1 F N
+DEF Isolate_ST-Link-rescue_GS2 J 0 40 N N 1 F N
 F0 "J" 100 150 50 H V C CNN
-F1 "Isolate_ST-Link-rescue:GS2" 100 -149 50 H V C CNN
+F1 "Isolate_ST-Link-rescue_GS2" 100 -149 50 H V C CNN
 F2 "Connectors:GS2" 74 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -149,11 +154,11 @@ X G2 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Isolate_ST-Link-rescue:STM32F103CBTx
+# Isolate_ST-Link-rescue_STM32F103CBTx
 #
-DEF Isolate_ST-Link-rescue:STM32F103CBTx U 0 40 Y Y 1 L N
+DEF Isolate_ST-Link-rescue_STM32F103CBTx U 0 40 Y Y 1 L N
 F0 "U" -2800 1725 50 H V L BNN
-F1 "Isolate_ST-Link-rescue:STM32F103CBTx" 2800 1725 50 H V R BNN
+F1 "Isolate_ST-Link-rescue_STM32F103CBTx" 2800 1725 50 H V R BNN
 F2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" 2800 1675 50 H I R TNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -209,11 +214,11 @@ X VDDA 9 100 1800 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Isolate_ST-Link-rescue:USB_OTG
+# Isolate_ST-Link-rescue_USB_OTG
 #
-DEF Isolate_ST-Link-rescue:USB_OTG J 0 40 Y Y 1 F N
+DEF Isolate_ST-Link-rescue_USB_OTG J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "Isolate_ST-Link-rescue:USB_OTG" -200 350 50 H V L CNN
+F1 "Isolate_ST-Link-rescue_USB_OTG" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 $FPLIST
@@ -244,11 +249,11 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:C
+# device_C
 #
-DEF device:C C 0 10 N Y 1 F N
+DEF device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "device:C" 25 -100 50 H V L CNN
+F1 "device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -262,11 +267,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:Crystal
+# device_Crystal
 #
-DEF device:Crystal Y 0 40 N N 1 F N
+DEF device_Crystal Y 0 40 N N 1 F N
 F0 "Y" 0 150 50 H V C CNN
-F1 "device:Crystal" 0 -150 50 H V C CNN
+F1 "device_Crystal" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -283,11 +288,11 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:D
+# device_D
 #
-DEF device:D D 0 40 N N 1 F N
+DEF device_D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "device:D" 0 -100 50 H V C CNN
+F1 "device_D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -306,11 +311,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:D_Zener_Small
+# device_D_Zener_Small
 #
-DEF device:D_Zener_Small D 0 10 N N 1 F N
+DEF device_D_Zener_Small D 0 10 N N 1 F N
 F0 "D" 0 90 50 H V C CNN
-F1 "device:D_Zener_Small" 0 -90 50 H V C CNN
+F1 "device_D_Zener_Small" 0 -90 50 H V C CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -329,11 +334,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:Fuse
+# device_Fuse
 #
-DEF device:Fuse F 0 0 N Y 1 F N
+DEF device_Fuse F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "device:Fuse" -75 0 50 V V C CNN
+F1 "device_Fuse" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -347,11 +352,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:L
+# device_L
 #
-DEF device:L L 0 40 N N 1 F N
+DEF device_L L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "device:L" 75 0 50 V V C CNN
+F1 "device_L" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -370,11 +375,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:LED
+# device_LED
 #
-DEF device:LED D 0 40 Y N 1 F N
+DEF device_LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "device:LED" 0 -100 50 H V C CNN
+F1 "device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -391,11 +396,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:R
+# device_R
 #
-DEF device:R R 0 0 N Y 1 F N
+DEF device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "device:R" 0 0 50 V V C CNN
+F1 "device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -409,11 +414,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mylib:ADuM4160
+# mylib_ADuM4160
 #
-DEF mylib:ADuM4160 U 0 40 Y Y 1 F N
+DEF mylib_ADuM4160 U 0 40 Y Y 1 F N
 F0 "U" 300 500 60 H V C CNN
-F1 "mylib:ADuM4160" -150 500 60 H V C CNN
+F1 "mylib_ADuM4160" -150 500 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -437,11 +442,11 @@ X GND2 9 450 -350 100 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# mylib:MAU10x
+# mylib_MAU10x
 #
-DEF mylib:MAU10x U 0 40 Y Y 1 F N
+DEF mylib_MAU10x U 0 40 Y Y 1 F N
 F0 "U" 250 250 60 H V C CNN
-F1 "mylib:MAU10x" -150 250 60 H V C CNN
+F1 "mylib_MAU10x" -150 250 60 H V C CNN
 F2 "" -300 200 60 H I C CNN
 F3 "" -300 200 60 H I C CNN
 DRAW
@@ -454,11 +459,11 @@ X +Vout 6 400 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# power1:+3V3
+# power1_+3V3
 #
-DEF power1:+3V3 #PWR 0 0 Y Y 1 F P
+DEF power1_+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power1:+3V3" 0 140 50 H V C CNN
+F1 "power1_+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -470,11 +475,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power1:+5V
+# power1_+5V
 #
-DEF power1:+5V #PWR 0 0 Y Y 1 F P
+DEF power1_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power1:+5V" 0 140 50 H V C CNN
+F1 "power1_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -485,11 +490,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power1:+5VP
+# power1_+5VP
 #
-DEF power1:+5VP #PWR 0 0 Y Y 1 F P
+DEF power1_+5VP #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power1:+5VP" 0 140 50 H V C CNN
+F1 "power1_+5VP" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -500,11 +505,11 @@ X +5VP 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power1:GND
+# power1_GND
 #
-DEF power1:GND #PWR 0 0 Y Y 1 F P
+DEF power1_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power1:GND" 0 -150 50 H V C CNN
+F1 "power1_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -513,11 +518,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power1:GNDPWR
+# power1_GNDPWR
 #
-DEF power1:GNDPWR #PWR 0 0 Y Y 1 F P
+DEF power1_GNDPWR #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -200 50 H I C CNN
-F1 "power1:GNDPWR" 0 -130 50 H V C CNN
+F1 "power1_GNDPWR" 0 -130 50 H V C CNN
 F2 "" 0 -50 50 H I C CNN
 F3 "" 0 -50 50 H I C CNN
 DRAW
@@ -532,11 +537,11 @@ X GNDPWR 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power1:PWR_FLAG
+# power1_PWR_FLAG
 #
-DEF power1:PWR_FLAG #FLG 0 0 N N 1 F P
+DEF power1_PWR_FLAG #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "power1:PWR_FLAG" 0 150 50 H V C CNN
+F1 "power1_PWR_FLAG" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

@@ -137,35 +137,13 @@ F 3 "" H 1250 4800 50  0001 C CNN
 	1    1250 4850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Isolate_ST-Link-rescue:CONN_01X06 J2
-U 1 1 5948A2BD
-P 9500 2950
-F 0 "J2" H 9500 3300 50  0000 C CNN
-F 1 "CONN_01X06" V 9600 2950 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_S06B-EH_1x06_P2.50mm_Horizontal" H 9500 2950 50  0001 C CNN
-F 3 "" H 9500 2950 50  0001 C CNN
-	1    9500 2950
-	1    0    0    1   
-$EndComp
 Text GLabel 8000 2700 0    60   Input ~ 0
 T_SWO
 Text GLabel 8000 2800 0    60   Input ~ 0
 T_NRST
 Text GLabel 8000 2900 0    60   Input ~ 0
 T_JTMS
-$Comp
-L power1:GND #PWR08
-U 1 1 5948BBA0
-P 8800 3250
-F 0 "#PWR08" H 8800 3000 50  0001 C CNN
-F 1 "GND" H 8800 3100 50  0000 C CNN
-F 2 "" H 8800 3250 50  0001 C CNN
-F 3 "" H 8800 3250 50  0001 C CNN
-	1    8800 3250
-	-1   0    0    -1  
-$EndComp
-Text GLabel 8000 3100 0    60   Input ~ 0
+Text GLabel 8000 3000 0    60   Input ~ 0
 T_JTCK
 $Comp
 L device:R R14
@@ -985,12 +963,12 @@ $EndComp
 $Comp
 L device:R R28
 U 1 1 59CA9CFA
-P 8550 3100
-F 0 "R28" V 8630 3100 50  0000 C CNN
-F 1 "22" V 8550 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 3100 50  0001 C CNN
-F 3 "" H 8550 3100 50  0001 C CNN
-	1    8550 3100
+P 8550 3000
+F 0 "R28" V 8630 3000 50  0000 C CNN
+F 1 "22" V 8550 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 3000 50  0001 C CNN
+F 3 "" H 8550 3000 50  0001 C CNN
+	1    8550 3000
 	0    -1   1    0   
 $EndComp
 Text GLabel 8400 2150 0    60   Input ~ 0
@@ -1080,13 +1058,11 @@ Wire Wire Line
 	1150 4700 1250 4700
 Connection ~ 1250 4700
 Wire Wire Line
-	8800 3000 9300 3000
-Wire Wire Line
 	6150 4800 6200 4800
 Wire Wire Line
 	6200 5100 6150 5100
 Wire Wire Line
-	7450 3200 8900 3200
+	7450 3200 9700 3200
 Wire Wire Line
 	8000 2900 8100 2900
 Wire Wire Line
@@ -1240,7 +1216,7 @@ Wire Wire Line
 	1600 3650 1600 4050
 Connection ~ 1600 4050
 Wire Wire Line
-	8700 3100 9000 3100
+	8700 3000 9000 3000
 Wire Wire Line
 	8400 2900 9100 2900
 Wire Wire Line
@@ -1258,19 +1234,13 @@ Wire Wire Line
 Wire Wire Line
 	8800 2000 9200 2000
 Wire Wire Line
-	8900 2450 8900 3200
-Connection ~ 8900 3200
-Wire Wire Line
-	8400 2700 9300 2700
+	9700 2450 9700 3200
 Wire Wire Line
 	9200 2000 9200 2800
-Connection ~ 9200 2800
 Wire Wire Line
 	9100 2150 9100 2900
-Connection ~ 9100 2900
 Wire Wire Line
-	9000 2300 9000 3100
-Connection ~ 9000 3100
+	9000 2300 9000 3000
 Wire Notes Line
 	3800 2400 3800 5050
 Wire Wire Line
@@ -1333,15 +1303,13 @@ Wire Wire Line
 	6200 4550 6200 4800
 Connection ~ 6200 4800
 Wire Wire Line
-	8000 3100 8400 3100
+	8000 3000 8400 3000
 Wire Wire Line
-	8900 2450 8800 2450
+	9700 2450 8800 2450
 Wire Wire Line
 	8500 2450 7700 2450
 Wire Wire Line
 	7700 2450 7700 1800
-Wire Wire Line
-	8800 3250 8800 3000
 Wire Wire Line
 	8150 4450 8750 4450
 Wire Wire Line
@@ -1401,14 +1369,6 @@ Wire Wire Line
 Wire Wire Line
 	1600 4050 1650 4050
 Wire Wire Line
-	8900 3200 9300 3200
-Wire Wire Line
-	9200 2800 9300 2800
-Wire Wire Line
-	9100 2900 9300 2900
-Wire Wire Line
-	9000 3100 9300 3100
-Wire Wire Line
 	9000 3700 9000 4350
 Wire Wire Line
 	8750 3700 9000 3700
@@ -1418,4 +1378,72 @@ Wire Wire Line
 	8150 3700 8450 3700
 Wire Wire Line
 	6200 4800 6200 5100
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 5C6B4233
+P 10100 3400
+F 0 "J2" H 10150 3817 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 10150 3726 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 10100 3400 50  0001 C CNN
+F 3 "~" H 10100 3400 50  0001 C CNN
+	1    10100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power1:GND #PWR0101
+U 1 1 5C6B457F
+P 9800 3650
+F 0 "#PWR0101" H 9800 3400 50  0001 C CNN
+F 1 "GND" H 9800 3500 50  0000 C CNN
+F 2 "" H 9800 3650 50  0001 C CNN
+F 3 "" H 9800 3650 50  0001 C CNN
+	1    9800 3650
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 9900 3500
+Wire Wire Line
+	9900 3600 9800 3600
+Wire Wire Line
+	9800 3600 9800 3650
+Wire Wire Line
+	9900 3400 9800 3400
+Wire Wire Line
+	9800 3400 9800 3600
+Connection ~ 9800 3600
+Wire Wire Line
+	9900 3300 9800 3300
+Wire Wire Line
+	9800 3300 9800 3400
+Connection ~ 9800 3400
+Wire Wire Line
+	9200 2000 10900 2000
+Wire Wire Line
+	10900 2000 10900 3600
+Wire Wire Line
+	10900 3600 10400 3600
+Connection ~ 9200 2000
+Wire Wire Line
+	9100 2150 10800 2150
+Wire Wire Line
+	10800 2150 10800 3200
+Wire Wire Line
+	10800 3200 10400 3200
+Connection ~ 9100 2150
+Wire Wire Line
+	9000 2300 10700 2300
+Wire Wire Line
+	10700 2300 10700 3300
+Wire Wire Line
+	10700 3300 10400 3300
+Connection ~ 9000 2300
+Wire Wire Line
+	10600 2700 10600 3400
+Wire Wire Line
+	10600 3400 10400 3400
+NoConn ~ 10400 3500
+Wire Wire Line
+	9700 3200 9900 3200
+Connection ~ 9700 3200
+Wire Wire Line
+	8400 2700 10600 2700
 $EndSCHEMATC
