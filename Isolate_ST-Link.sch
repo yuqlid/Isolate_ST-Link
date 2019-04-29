@@ -1477,17 +1477,6 @@ Wire Wire Line
 	2750 5600 1850 5600
 Wire Wire Line
 	1850 5700 2450 5700
-$Comp
-L power:GND #PWR0103
-U 1 1 5CC9433B
-P 3100 5900
-F 0 "#PWR0103" H 3100 5650 50  0001 C CNN
-F 1 "GND" H 3105 5727 50  0000 C CNN
-F 2 "" H 3100 5900 50  0001 C CNN
-F 3 "" H 3100 5900 50  0001 C CNN
-	1    3100 5900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 5600 3050 5600
 Wire Wire Line
@@ -1507,5 +1496,24 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 2530 5700 50  0001 C CNN
 F 3 "" H 2600 5700 50  0001 C CNN
 	1    2600 5700
 	0    1    1    0   
+$EndComp
+Text Label 1950 4800 0    50   ~ 0
+DIN_-
+Text Label 2300 4800 0    50   ~ 0
+DIN_+
+Text Label 2550 4150 0    50   ~ 0
+UD-
+Text Label 2550 4250 0    50   ~ 0
+UD+
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5CD2DF7B
+P 3100 5900
+F 0 "#PWR?" H 3100 5700 50  0001 C CNN
+F 1 "GNDPWR" H 3104 5746 50  0000 C CNN
+F 2 "" H 3100 5850 50  0001 C CNN
+F 3 "" H 3100 5850 50  0001 C CNN
+	1    3100 5900
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
