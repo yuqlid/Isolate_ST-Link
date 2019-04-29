@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Isolate_ST-Link-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -27,17 +27,6 @@ F6 "USB_DP" I L 6350 4250 60
 F7 "USB_RENUMn" I L 6350 3500 60 
 F8 "Vtarget" I R 7450 3200 60 
 $EndSheet
-$Comp
-L Isolate_ST-Link-rescue:USB_OTG J1
-U 1 1 5948518F
-P 1250 4250
-F 0 "J1" H 1050 4700 50  0000 L CNN
-F 1 "USB_OTG" H 1050 4600 50  0000 L CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1400 4200 50  0001 C CNN
-F 3 "" H 1400 4200 50  0001 C CNN
-	1    1250 4250
-	1    0    0    -1  
-$EndComp
 $Comp
 L device:D_Zener_Small D3
 U 1 1 59485C1F
@@ -124,17 +113,6 @@ F 1 "CONN_01X04" V 9350 4500 50  0000 C CNN
 F 2 "Connector_JST:JST_EH_S04B-EH_1x04_P2.50mm_Horizontal" H 9250 4500 50  0001 C CNN
 F 3 "" H 9250 4500 50  0001 C CNN
 	1    9250 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power1:GNDPWR #PWR07
-U 1 1 59488AEA
-P 1250 4850
-F 0 "#PWR07" H 1250 4650 50  0001 C CNN
-F 1 "GNDPWR" H 1250 4720 50  0000 C CNN
-F 2 "" H 1250 4800 50  0001 C CNN
-F 3 "" H 1250 4800 50  0001 C CNN
-	1    1250 4850
 	1    0    0    -1  
 $EndComp
 Text GLabel 8000 2700 0    60   Input ~ 0
@@ -419,28 +397,6 @@ F 1 "0.1u" H 2725 3800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2738 3750 50  0001 C CNN
 F 3 "" H 2700 3900 50  0001 C CNN
 	1    2700 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R1
-U 1 1 594A71FB
-P 1600 4650
-F 0 "R1" V 1680 4650 50  0000 C CNN
-F 1 "100k" V 1600 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1530 4650 50  0001 C CNN
-F 3 "" H 1600 4650 50  0001 C CNN
-	1    1600 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power1:GNDPWR #PWR019
-U 1 1 594A7A10
-P 1600 4850
-F 0 "#PWR019" H 1600 4650 50  0001 C CNN
-F 1 "GNDPWR" H 1600 4720 50  0000 C CNN
-F 2 "" H 1600 4800 50  0001 C CNN
-F 3 "" H 1600 4800 50  0001 C CNN
-	1    1600 4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1051,13 +1007,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 4350 9050 4350
 Wire Wire Line
-	1250 4650 1250 4700
-Wire Wire Line
-	1150 4650 1150 4700
-Wire Wire Line
-	1150 4700 1250 4700
-Connection ~ 1250 4700
-Wire Wire Line
 	6150 4800 6200 4800
 Wire Wire Line
 	6200 5100 6150 5100
@@ -1146,21 +1095,13 @@ Wire Wire Line
 Wire Wire Line
 	3350 3150 3350 3200
 Wire Wire Line
-	1550 4450 1600 4450
+	1800 4350 1750 4350
 Wire Wire Line
-	1600 4450 1600 4500
-Wire Wire Line
-	1600 4850 1600 4800
-Wire Wire Line
-	1800 4350 1550 4350
-Wire Wire Line
-	1800 4250 1550 4250
+	1800 4250 1750 4250
 Wire Wire Line
 	2250 4350 2100 4350
 Wire Wire Line
 	2100 4250 3350 4250
-Wire Wire Line
-	1550 4050 1600 4050
 Wire Wire Line
 	2000 4050 1950 4050
 Wire Wire Line
@@ -1319,8 +1260,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 4550 7900 4600
 Wire Wire Line
-	1250 4700 1250 4850
-Wire Wire Line
 	4700 4350 4700 4400
 Wire Wire Line
 	4700 4350 4900 4350
@@ -1446,4 +1385,127 @@ Wire Wire Line
 Connection ~ 9700 3200
 Wire Wire Line
 	8400 2700 10600 2700
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J7
+U 1 1 5CC5CAFE
+P 1250 6000
+F 0 "J7" H 1357 6867 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1357 6776 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 1400 6000 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1400 6000 50  0001 C CNN
+	1    1250 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5400 2100 5400
+Wire Wire Line
+	2100 5400 2100 4550
+Wire Wire Line
+	2100 4550 1700 4550
+Wire Wire Line
+	1700 4550 1700 4150
+Wire Wire Line
+	1700 4150 1600 4150
+Wire Wire Line
+	1600 4150 1600 4050
+$Comp
+L power:GNDPWR #PWR0102
+U 1 1 5CC728CF
+P 1250 7050
+F 0 "#PWR0102" H 1250 6850 50  0001 C CNN
+F 1 "GNDPWR" H 1254 6896 50  0000 C CNN
+F 2 "" H 1250 7000 50  0001 C CNN
+F 3 "" H 1250 7000 50  0001 C CNN
+	1    1250 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 7050 1250 6950
+Wire Wire Line
+	950  6900 950  6950
+Wire Wire Line
+	950  6950 1250 6950
+Connection ~ 1250 6950
+Wire Wire Line
+	1250 6950 1250 6900
+Wire Wire Line
+	1850 5900 1950 5900
+Wire Wire Line
+	1950 5900 1950 6000
+Wire Wire Line
+	1950 6000 1850 6000
+Wire Wire Line
+	1850 6100 1950 6100
+Wire Wire Line
+	1950 6100 1950 6200
+Wire Wire Line
+	1950 6200 1850 6200
+Wire Wire Line
+	1950 5900 1950 4500
+Wire Wire Line
+	1950 4500 1750 4500
+Wire Wire Line
+	1750 4500 1750 4350
+Connection ~ 1950 5900
+Wire Wire Line
+	1950 6100 2300 6100
+Wire Wire Line
+	2300 6100 2300 4050
+Wire Wire Line
+	2300 4050 2100 4050
+Wire Wire Line
+	2100 4050 2100 4150
+Wire Wire Line
+	2100 4150 1750 4150
+Wire Wire Line
+	1750 4150 1750 4250
+Connection ~ 1950 6100
+NoConn ~ 1850 6500
+NoConn ~ 1850 6600
+$Comp
+L device:R R35
+U 1 1 5CC654E2
+P 2900 5600
+F 0 "R35" V 2693 5600 50  0000 C CNN
+F 1 "5.1k" V 2784 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 5600 50  0001 C CNN
+F 3 "" H 2900 5600 50  0001 C CNN
+	1    2900 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 5600 1850 5600
+Wire Wire Line
+	1850 5700 2450 5700
+$Comp
+L power:GND #PWR0103
+U 1 1 5CC9433B
+P 3100 5900
+F 0 "#PWR0103" H 3100 5650 50  0001 C CNN
+F 1 "GND" H 3105 5727 50  0000 C CNN
+F 2 "" H 3100 5900 50  0001 C CNN
+F 3 "" H 3100 5900 50  0001 C CNN
+	1    3100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5600 3050 5600
+Wire Wire Line
+	3100 5600 3100 5700
+Wire Wire Line
+	2750 5700 3100 5700
+Connection ~ 3100 5700
+Wire Wire Line
+	3100 5700 3100 5900
+$Comp
+L device:R R1
+U 1 1 5CCB9E94
+P 2600 5700
+F 0 "R1" V 2393 5700 50  0000 C CNN
+F 1 "5.1k" V 2484 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2530 5700 50  0001 C CNN
+F 3 "" H 2600 5700 50  0001 C CNN
+	1    2600 5700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
