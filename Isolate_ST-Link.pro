@@ -1,4 +1,4 @@
-update=2019/04/28 14:51:15
+update=2019/05/11 11:34:30
 version=1
 last_client=kicad
 [cvpcb]
@@ -18,7 +18,7 @@ BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
-ProhibitOverlappingCourtyards=1
+ProhibitOverlappingCourtyards=0
 MinTrackWidth=0.199
 MinViaDiameter=0.4
 MinViaDrill=0.3
@@ -68,4 +68,4 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
