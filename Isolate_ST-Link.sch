@@ -1156,7 +1156,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 1000 8800 1000
 Wire Wire Line
-	9300 1450 9300 2200
+	8900 1450 8900 2200
 Wire Wire Line
 	8800 1000 8800 1800
 Wire Wire Line
@@ -1227,7 +1227,7 @@ Connection ~ 7400 4600
 Wire Wire Line
 	7600 2000 8000 2000
 Wire Wire Line
-	9300 1450 8400 1450
+	8900 1450 8400 1450
 Wire Wire Line
 	8100 1450 7300 1450
 Wire Wire Line
@@ -1299,73 +1299,17 @@ Wire Wire Line
 Wire Wire Line
 	7400 4600 7400 4900
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J2
-U 1 1 5C6B4233
-P 9700 2400
-F 0 "J2" H 9750 2817 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 9750 2726 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 9700 2400 50  0001 C CNN
-F 3 "~" H 9700 2400 50  0001 C CNN
-	1    9700 2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power1:GND #PWR0101
 U 1 1 5C6B457F
-P 9400 2650
-F 0 "#PWR0101" H 9400 2400 50  0001 C CNN
-F 1 "GND" H 9400 2500 50  0000 C CNN
-F 2 "" H 9400 2650 50  0001 C CNN
-F 3 "" H 9400 2650 50  0001 C CNN
-	1    9400 2650
+P 9050 2650
+F 0 "#PWR0101" H 9050 2400 50  0001 C CNN
+F 1 "GND" H 9050 2500 50  0000 C CNN
+F 2 "" H 9050 2650 50  0001 C CNN
+F 3 "" H 9050 2650 50  0001 C CNN
+	1    9050 2650
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 9500 2500
-Wire Wire Line
-	9500 2600 9400 2600
-Wire Wire Line
-	9400 2600 9400 2650
-Wire Wire Line
-	9500 2400 9400 2400
-Wire Wire Line
-	9400 2400 9400 2600
-Connection ~ 9400 2600
-Wire Wire Line
-	9500 2300 9400 2300
-Wire Wire Line
-	9400 2300 9400 2400
-Connection ~ 9400 2400
-Wire Wire Line
-	8800 1000 10500 1000
-Wire Wire Line
-	10500 1000 10500 2600
-Wire Wire Line
-	10500 2600 10000 2600
-Connection ~ 8800 1000
-Wire Wire Line
-	8700 1150 10400 1150
-Wire Wire Line
-	10400 1150 10400 2200
-Wire Wire Line
-	10400 2200 10000 2200
-Connection ~ 8700 1150
-Wire Wire Line
-	8600 1300 10300 1300
-Wire Wire Line
-	10300 1300 10300 2300
-Wire Wire Line
-	10300 2300 10000 2300
-Connection ~ 8600 1300
-Wire Wire Line
-	10200 1700 10200 2400
-Wire Wire Line
-	10200 2400 10000 2400
-NoConn ~ 10000 2500
-Wire Wire Line
-	9300 2200 9500 2200
-Connection ~ 9300 2200
-Wire Wire Line
-	8000 1700 10200 1700
+Connection ~ 8900 2200
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J7
 U 1 1 5CC5CAFE
@@ -1502,9 +1446,37 @@ Connection ~ 2450 4900
 Wire Wire Line
 	2450 4900 2650 4900
 Wire Wire Line
-	8650 3000 8850 3000
+	8650 3000 8900 3000
 Wire Wire Line
-	8850 3000 8850 2200
+	8900 3000 8900 2200
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5D0275EA
+P 9400 2000
+F 0 "J1" H 9318 1475 50  0000 C CNN
+F 1 "Conn_01x06" H 9318 1566 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_S6B-EH_1x06_P2.50mm_Horizontal" H 9400 2000 50  0001 C CNN
+F 3 "~" H 9400 2000 50  0001 C CNN
+	1    9400 2000
+	1    0    0    1   
+$EndComp
+Connection ~ 8600 2000
+Connection ~ 8800 1800
+Connection ~ 8700 1900
 Wire Wire Line
-	8850 2200 9300 2200
+	9200 2000 9050 2000
+Wire Wire Line
+	9050 2000 9050 2650
+Wire Wire Line
+	8900 2200 9200 2200
+Wire Wire Line
+	8700 1900 9200 1900
+Wire Wire Line
+	8800 1800 9200 1800
+Wire Wire Line
+	9200 2100 8600 2100
+Wire Wire Line
+	8600 2100 8600 2000
+Wire Wire Line
+	8000 1700 9200 1700
 $EndSCHEMATC
