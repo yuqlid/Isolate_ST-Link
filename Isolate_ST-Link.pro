@@ -1,4 +1,4 @@
-update=2019/05/11 11:34:30
+update=2019/06/15 22:22:26
 version=1
 last_client=kicad
 [cvpcb]
@@ -42,7 +42,7 @@ ViaDiameter5=0.8
 ViaDrill5=0.6
 ViaDiameter6=1
 ViaDrill6=0.8
-dPairWidth1=0.2
+dPairWidth1=0.25
 dPairGap1=0.25
 dPairViaGap1=0.25
 SilkLineWidth=0.15
@@ -67,5 +67,5 @@ OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0.25
-SolderPasteClearance=0
+SolderPasteClearance=-0.05
 SolderPasteRatio=-0
